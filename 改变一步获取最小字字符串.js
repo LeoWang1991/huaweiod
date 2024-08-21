@@ -29,11 +29,9 @@ s是都是小写字符组成
 function getMinStringAfterOneSwap(s) {
   const arr = s.split('');
   const n = arr.length;
-
   for(let i = 0; i < n - 1;i++) {
     let minChar = arr[i];
     let minIndex = i;
-
     // 从i+1位置后面开始查找
     for (let j = i + 1; j < n;j++) {
       // 写<= 是因为后面的同样更小的字符放到前面更小
@@ -51,10 +49,8 @@ function getMinStringAfterOneSwap(s) {
       return arr.join('');
     }
   }
-
   // 如果没有找到，原来的就是最小的
   return s;
 }
-
 const s = 'bcdefaca';
 console.log(getMinStringAfterOneSwap(s));

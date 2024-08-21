@@ -24,7 +24,6 @@ S中的每个字符在L中都能找到（可以不连续），
 function findLastvalidCharPosition(S, L) {
   let sIndex = 0;
   let lastPos = -1;
-
   for (let i = 0;i < L.length;i++) {
     if (S[sIndex] === L[i]) {
       sIndex++;
@@ -35,10 +34,8 @@ function findLastvalidCharPosition(S, L) {
       }
     }
   }
-
   return sIndex === S.length ? lastPos : -1;
 }
-
 const S = 'ace';
 const L = 'abdec';
 console.log(findLastvalidCharPosition(S, L));

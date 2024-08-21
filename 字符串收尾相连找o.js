@@ -14,6 +14,5 @@ function maxOStr(s) {
       num += 1;
     }
   }
-
   return num % 2 === 0 ? s.length : s.length - 1;
 }
